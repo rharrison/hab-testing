@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+<Style id="track">
+<LineStyle> <color>fff010c0</color> </LineStyle>
+<PolyStyle> <color>3fc00880</color> </PolyStyle>
+</Style>
+<Style id="place">
+<IconStyle> <scale>1</scale> <Icon> <href>http://weather.uwyo.edu/icons/purple.gif</href> </Icon> </IconStyle>
+</Style>
+<Placemark> <name>Launch</name> <styleUrl>#place</styleUrl>
+<description>Launch!</description>
+<Point> <altitudeMode>absolute</altitudeMode>
+<coordinates>0.000100,0.000010,1.000000</coordinates>
+</Point>
+</Placemark>
+<Placemark> <name>Flight Path</name> <styleUrl>#track</styleUrl>
+<LineString> <extrude>1</extrude> <altitudeMode>absolute</altitudeMode>
+<coordinates>
+0.000100,0.000010,1.000000
+-0.001060,0.001813,21.000000
+-0.002357,-0.003355,41.000000
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark> <name>Position Now</name> <styleUrl>#place</styleUrl>
+<description>HereNoW!</description>
+<Point> <altitudeMode>absolute</altitudeMode>
+<coordinates>-0.002357,-0.003355,41.000000</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
